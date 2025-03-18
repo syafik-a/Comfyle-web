@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Your E-Commerce Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for FAQ toggle */
+    .faq-answer {
+      display: none;
+    }
+    .faq-toggle.open .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- navbar -->
+    <nav
+    class="bg-white border-white-200 dark:border-white-600 dark:bg-white-900 fixed top-0 left-0 w-full z-20"
+  >
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+    >
+      <a
+        href="https://flowbite.com"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+      >
+        <img
+          src="Images/Footstyles Logo New.png"
+          class="h-8"
+          alt="Footstyles Logo"
+        />
+      </a>
+      <button
+        data-collapse-toggle="mega-menu-full"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
+        aria-controls="mega-menu-full"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+      <div
+        id="mega-menu-full"
+        class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-white-800 md:dark:bg-white-900 dark:border-white-700"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 dark:text-black md:dark:hover:text-gray-500 dark:hover:text-gray-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <button
+              id="mega-menu-full-dropdown-button"
+              data-collapse-toggle="mega-menu-full-dropdown"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 dark:text-black md:dark:hover:text-gray-500 dark:hover:text-gray-500 md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Collection
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              href="mainshop.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 dark:text-black md:dark:hover:text-gray-500 dark:hover:text-gray-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              >Shop</a
+            >
+          </li>
+          <li>
+            <a
+              href="contacus.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0 dark:text-black md:dark:hover:text-gray-500 dark:hover:text-gray-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              >Account</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      id="mega-menu-full-dropdown"
+      class="hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-white-800 dark:border-gray-600"
+    >
+      <div
+        class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6"
+      >
+        <ul>
+          <li>
+            <a href="nikeplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">Nike</div>
+              <span class="text-sm text-black"
+                >High-performance athletic gear, cutting-edge designs, iconic
+                sportswear brand.</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="adidasplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">Adidas</div>
+              <span class="text-sm text-black"
+                >Innovative sportswear, sustainable materials, stylish
+                athletic shoes, global presence.</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="pumaplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">Puma</div>
+              <span class="text-sm text-black"
+                >Trendy sports fashion, versatile footwear, bold designs,
+                active lifestyle brand.</span
+              >
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="skechersplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">Skechers</div>
+              <span class="text-sm text-black"
+                >Comfortable footwear, casual styles, affordable options,
+                popular everyday shoes.</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="newbalanceplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">New Balance</div>
+              <span class="text-sm text-black"
+                >Classic designs, premium comfort, supportive footwear,
+                renowned for quality.</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="converseplp.html" class="block p-3 rounded-lg hover:bg-gray-100">
+              <div class="font-semibold text-black">Converse</div>
+              <span class="text-sm text-black"
+                >Timeless sneakers, street style, iconic canvas shoes,
+                youthful, casual brand.</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Frequently Asked Questions</h1>
+      <p class="text-lg md:text-2xl max-w-3xl mx-auto">
+        Have questions? We've got answers. Find all the information you need below!
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">General Questions</h2>
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-toggle mb-6">
+          <h3 class="text-xl font-semibold text-gray-700 cursor-pointer">What is your return policy?</h3>
+          <div class="faq-answer mt-3 text-gray-600">
+            <p>We offer a 30-day return policy on all products. If you're not satisfied with your purchase, contact us for a return within 30 days of delivery.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-toggle mb-6">
+          <h3 class="text-xl font-semibold text-gray-700 cursor-pointer">How long does shipping take?</h3>
+          <div class="faq-answer mt-3 text-gray-600">
+            <p>Shipping typically takes between 3-7 business days, depending on your location. Express shipping options are available at checkout.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-toggle mb-6">
+          <h3 class="text-xl font-semibold text-gray-700 cursor-pointer">What payment methods do you accept?</h3>
+          <div class="faq-answer mt-3 text-gray-600">
+            <p>We accept all major credit cards, PayPal, and Apple Pay. You can select your preferred payment method during checkout.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-toggle mb-6">
+          <h3 class="text-xl font-semibold text-gray-700 cursor-pointer">Can I track my order?</h3>
+          <div class="faq-answer mt-3 text-gray-600">
+            <p>Yes! Once your order has been shipped, you will receive a confirmation email with a tracking number to follow your package’s journey.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-toggle mb-6">
+          <h3 class="text-xl font-semibold text-gray-700 cursor-pointer">Do you ship internationally?</h3>
+          <div class="faq-answer mt-3 text-gray-600">
+            <p>We offer international shipping to selected countries. Shipping rates and delivery times vary depending on the destination. Check our shipping page for more details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="navbar.js">
+    // JavaScript to toggle FAQ answers
+    document.querySelectorAll('.faq-toggle').forEach((item) => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
